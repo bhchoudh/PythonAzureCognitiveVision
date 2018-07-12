@@ -1,0 +1,52 @@
+[
+    {
+        "faceId": "7b4d18d2-486a-4951-8c5d-afa35c242b5e",
+        "faceRectangle": {
+            "top": 572,
+            "left": 2184,
+            "width": 242,
+            "height": 242
+        },
+        "faceAttributes": {
+            "smile": 0.043,
+            "headPose": {
+                "pitch": 0.0,
+                "roll": 0.9,
+                "yaw": -9.9
+            },
+            "gender": "male",
+            "age": 32.0,
+            "facialHair": {
+                "moustache": 0.4,
+                "beard": 0.4,
+                "sideburns": 0.4
+            },
+            "glasses": "NoGlasses"
+        }
+    },
+    {
+        "faceId": "9db967b2-818f-4e41-8d97-7d729a72f6bb",
+        "faceRectangle": {
+            "top": 921,
+            "left": 1522,
+            "width": 225,
+            "height": 225
+        },
+        "faceAttributes": {
+            "smile": 0.013,
+            "headPose": {
+                "pitch": 0.0,
+                "roll": -4.0,
+                "yaw": -3.6
+            },
+            "gender": "male",
+            "age": 40.0,
+            "facialHair": {
+                "moustache": 0.1,
+                "beard": 0.1,
+                "sideburns": 0.1
+            },
+            "glasses": "ReadingGlasses"
+        }
+    }
+]

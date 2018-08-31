@@ -32,3 +32,4 @@ class clsBhasAzureFace():
         file=open('imagedetail.json','w')
         file.write(json.dumps(resultdata,indent=4))
         return
+

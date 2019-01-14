@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BhasContentModeration.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BhasImageHandling.py">
       <SubType>Code</SubType>
     </Compile>

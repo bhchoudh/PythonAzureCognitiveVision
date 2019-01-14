@@ -12,14 +12,18 @@ class clsBhasAzureFace():
 
 # Function for Face Detect API call 
 # *********************************************       
-    def BhasAzureFaceDetect(self,selection,Remote_img_url,Local_img_url):
+    #def BhasAzureFaceDetect(self,selection,Remote_img_url,Local_img_url):
+    def BhasAzureFaceDetect(self,selection,contentpath):
         params = {'returnFaceAttributes': 'age,gender,headPose,smile,facialHair,glasses'}   # Optional Params:- 'returnFaceId': 'true','returnFaceLandmarks': 'false',
         if selection == 'R':
-            actualimage = requests.get(Remote_img_url).content
+            #actualimage = requests.get(Remote_img_url).content
+            actualimage = requests.get(contentpath).content
             headers = {'Ocp-Apim-Subscription-Key': self.KEY,'contentType':'application/json','accept':'application/json'}
-            response = requests.post(self.API_URL, params=params, headers=headers, json={'url': Remote_img_url})
+            #response = requests.post(self.API_URL, params=params, headers=headers, json={'url': Remote_img_url})
+            response = requests.post(self.API_URL, params=params, headers=headers, json={'url': contentpath})
         else:
-            actualimage= open(Local_img_url,'rb').read()
+            #actualimage= open(Local_img_url,'rb').read()
+            actualimage= open(contentpath,'rb').read()
             headers = {'Ocp-Apim-Subscription-Key': self.KEY,'Content-Type': 'application/octet-stream'}
             response = requests.post(self.API_URL, params=params, headers=headers, data=actualimage)
 
